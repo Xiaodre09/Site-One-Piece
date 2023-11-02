@@ -1,0 +1,127 @@
+body {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+main::after {
+
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100vw;
+    background: rgb(209, 219, 72);
+    background: linear-gradient(132deg, rgba(209, 219, 72, 0.591456651019783) -250%, rgba(0, 0, 0, 1) 24%, rgba(0, 0, 0, 0) 50%, rgba(241, 228, 228, 0) 100%); 
+    
+
+}
+
+.sombra1::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100vw;
+    /* background: rgb(209, 219, 72);
+    background: linear-gradient(270deg, rgba(209, 219, 72, 0.591456651019783) -250%, rgba(0, 0, 0, 0.7399160347732843) 0%, rgba(0, 0, 0, 0) 38%, rgba(241, 228, 228, 0) 100%); */
+    background: rgb(209, 219, 72);
+    background: linear-gradient(270deg, rgba(209, 219, 72, 0.591456651019783) -250%, rgba(0, 0, 0, 0.8071429255295868) 0%, rgba(0, 0, 0, 0.022829200039390707) 20%, rgba(241, 228, 228, 0) 100%);
+
+
+
+}
+
+
+main .personagem {
+    display: none;
+    height: 100vh;
+}
+
+main .personagem.selecionado {
+    display: block;
+}
+
+main .personagem .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo {
+
+    position: absolute;
+    top: 0;
+    left: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 380px;
+    z-index: 1;
+}
+
+.conteudo .nome-personagem {
+
+    color: white;
+    font-size: 48px;
+    font-family: "Secular One";
+    margin-bottom: 50px;
+}
+
+.conteudo .descricao {
+
+    color: white;
+    font-family: "Rubik";
+    line-height: 24px;
+    transform: scale(1.4    );
+    width: 400px;
+  
+    
+    
+}
+
+.conteudo .logo {
+    background-image: url("../imagens/one-piece-logo.png");
+    background-size: cover;
+    height: 100px;
+    width: 260px;
+    margin-bottom: 35px;
+}
+
+.botoes {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0, 3);
+    margin-top: 40px;
+    width: 15%;
+
+
+}
+
+.botoes .botao {
+    border: none;
+    background: #000000;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.botoes .botao img {
+    border-radius: 50%;
+    /* margin-bottom: 50px; */
+}
+
+
+.botoes .botao.selecionado {
+    transform: scale(1.2);
+    box-shadow: 0 0 10 px #d9d9d9;
+
+}
